@@ -5,7 +5,8 @@ from uuid import uuid4
 
 import streamlit as st
 from loguru import logger
-sys.path.append("/Users/xiefei/myspace/Learnspace/tech/gitrepo/Text2VideoTurbo")
+
+sys.path.append(os.getcwd()) # 加入项目路径到系统路径中
 from app.config import config
 from app.models.const import FILE_TYPE_IMAGES, FILE_TYPE_VIDEOS
 from app.models.schema import MaterialInfo, VideoAspect, VideoConcatMode, VideoParams
